@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/todaynews
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 666666
+  velocity:
+    toolbox-config-location: toolbox.xml
+mybatis:
+  config-location: classpath:mybatis.xml
+server:
+  port: 80

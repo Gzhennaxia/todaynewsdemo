@@ -1,0 +1,85 @@
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="testTables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            &lt;!&ndash; 是否去除自动生成的注释 true：是 ： false:否 &ndash;&gt;
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+        &lt;!&ndash;数据库连接的信息：驱动类、连接地址、用户名、密码 &ndash;&gt;
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/todaynews"
+                        userId="root"
+                        password="666666">
+        </jdbcConnection>
+
+        &lt;!&ndash;&lt;!&ndash;
+            for oracle
+           &ndash;&gt;
+        <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
+            connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg"
+            userId="yycg"
+            password="yycg">
+        </jdbcConnection>&ndash;&gt;
+
+        &lt;!&ndash; 默认false，
+            为false把JDBC DECIMAL 和 NUMERIC 类型解析为Integer，
+            为 true把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal &ndash;&gt;
+
+        &lt;!&ndash;<javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>&ndash;&gt;
+
+        &lt;!&ndash; javaModelGenerator javaBean生成的配置信息
+             targetProject:生成PO类的位置
+             targetPackage：生成PO类的类名&ndash;&gt;
+        <javaModelGenerator targetPackage="com.todaynews.ssm2.bean"
+                            targetProject=".\src\main\java">
+            &lt;!&ndash; enableSubPackages:是否允许子包,是否让schema作为包的后缀
+                 即targetPackage.schemaName.tableName &ndash;&gt;
+            <property name="enableSubPackages" value="true"/>
+            &lt;!&ndash; 从数据库返回的值是否清理前后的空格 &ndash;&gt;
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+
+        &lt;!&ndash; sqlMapGenerator Mapper映射文件的配置信息
+            targetProject:mapper映射文件生成的位置
+            targetPackage:生成mapper映射文件放在哪个包下&ndash;&gt;
+        <sqlMapGenerator targetPackage="com.cskaoyan.aaa.dao"
+                         targetProject=".\src">
+            &lt;!&ndash; enableSubPackages:是否让schema作为包的后缀 &ndash;&gt;
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        &lt;!&ndash;
+           javaClientGenerator 生成 Model对象(JavaBean)和 mapper XML配置文件 对应的Dao代码
+           targetProject:mapper接口生成的位置
+           targetPackage:生成mapper接口放在哪个包下
+        &ndash;&gt;
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.cskaoyan.aaa.dao"
+                             targetProject=".\src">
+            &lt;!&ndash; enableSubPackages:是否让schema作为包的后缀 &ndash;&gt;
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        &lt;!&ndash; 指定数据库表 &ndash;&gt;
+        <table tableName="comment"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableInsert="false"
+               enableDeleteByPrimaryKey="false"
+               enableSelectByPrimaryKey="false"
+               selectByExampleQueryId="false">
+        </table>
+
+    </context>
+</generatorConfiguration>
+-->

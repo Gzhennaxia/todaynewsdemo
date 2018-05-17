@@ -1,0 +1,13 @@
+#parse("header.vm")
+<div id="main">
+    <div class="container">
+        头像: <img alt="头像" src="$!{user1.headUrl}" style="width: 10%;"/><br>
+        用户名: $!{user1.username} <br>
+
+        <!--<ul>
+        <li class="js-sendMsg"><a href="javascript:void(0);">发站内信</a></li>
+        </ul>-->
+
+    </div>
+</div>
+#parse("footer.vm")
